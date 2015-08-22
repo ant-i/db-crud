@@ -1,0 +1,5 @@
+<tr>
+% for my $name ( @{ $__columns } ) {
+	<td class="column" data-name="<%= $name %>"><%= field_value $__item, $name; %></td>
+% } # end for
+</tr>

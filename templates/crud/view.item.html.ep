@@ -1,0 +1,5 @@
+<div class="view-item" data-id="<%= $__id %>">
+	% for my $column ( @{ $__columns } ) {
+	
+	% } # end for
+</div>

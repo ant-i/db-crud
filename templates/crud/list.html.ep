@@ -1,0 +1,26 @@
+% layout 'default';
+
+<%# Contains current namespace navigation controls %>
+<div class="u-1-8">
+	<ul>
+	</ul>
+</div>
+
+<%# Contains table data and table data controls %>
+<div class="u-7-8">
+	<table class="table table-striped" data-class="">
+		<thead>
+			<tr>
+				%# Display column names as table headers
+				% my @column_names = $meta->column_accessor_method_names;
+				% for(@column_names) {
+					<th><%= $_ %></th>
+				% } # end for
+			</tr>
+		</thead>
+		<tbody>
+			%# Pass meta information of domain and delegate each items to crud/list.item template
+			%= each_row( $meta, $items => 'crud/list.item' );
+		</tbody>
+	</table>
+</div>

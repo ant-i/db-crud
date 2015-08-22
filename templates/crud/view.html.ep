@@ -1,0 +1,4 @@
+% layout 'default';
+<div id="view">
+	%= each_row( $meta, $items => 'crud/view.item' );
+</div>

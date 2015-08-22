@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+	<% # --------- Styles %>
+	<link href="/css/lib/pure.css" media="all" rel="stylesheet" type="text/css" />
+	<!-- <link href="/css/lib/font-awesome.css" rel="stylesheet" />
+	<link href="/css/default.css" media="all" rel="stylesheet" type="text/css" /> -->
+	<% # --------- Scripts %>
+
+	<title><%= title %></title>
+</head>
+<body>
+<div id="wrapper" class="wrapper u-1">
+	<%= content %>
+</div>
+</body>
+</html>

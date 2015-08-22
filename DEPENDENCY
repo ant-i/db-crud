@@ -1,0 +1,14 @@
+DBD::Pg
+DBD::Oracle
+DBD::MySQL
+DBD::SQLite
+
+Log::Any
+Log::Any::Adapter
+
+Mojolicious
+
+Rose::DB
+Rose::DB::Object
+Rose::DB::Object::Manager
+Rose::DB::Object::Loader

@@ -1,0 +1,18 @@
+% layout 'default';
+
+<div class="panels">
+	
+	% for my $chunk ( @{ $chunks } ) {
+	<div class="panel" data-role="chunk">
+
+		<h3><a href="/tables/<%= $chunk->{ ns } %>"><%= $chunk->{ name } %></a></h3>
+		<ul data-role="datasource">
+			<li>Host: <%= $chunk->{ datasource }->{ host } %></li>
+			<li>Type: <%= $chunk->{ datasource }->{ type } %></li>
+			<li>Name: <%= $chunk->{ datasource }->{ database } %></li>
+		</ul>
+
+	</div>
+	% } # end while
+
+</div>
